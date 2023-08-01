@@ -133,7 +133,7 @@ function initial() {
 var corsOptions = {
   credentials: true,
   //origin: "http://localhost:8081"
-  origin: "https://leafy-otter-400dc6.netlify.app"
+  origin: "https://frabjous-mermaid-38f8a7.netlify.app"
 };
 
  
