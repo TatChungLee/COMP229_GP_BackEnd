@@ -1,3 +1,5 @@
+// Import necessary modules
+
 const express = require("express");
 
 const cors = require("cors");
@@ -21,6 +23,8 @@ const db = require("./app/models");
 //const db = require("./app/models");
 
 const Role = db.role;
+
+// Connect to the MongoDB database using Mongoose
 
 db.mongoose
 
@@ -56,7 +60,8 @@ db.mongoose
 
   });
 
- 
+ // Initialize roles in the database
+
 
 function initial() {
 
@@ -153,6 +158,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
  
+// Add cookie-session middleware for session management
 
 app.use(
 
